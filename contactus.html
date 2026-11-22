@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+    <title> Contact Us</title>
+</head>
+<body>
+<header>
+    <h1> Contact Us</h1>
+</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cafe.html">Cafe</a>
+        <a href="activities.html">Activities</a>
+        <a href="history.html">History</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+<main>
+<div class="contact-container">
+    <div class="social-links">
+        <div class="social-item">
+            <img src="instagram.png" alt="Instagram Logo">
+            <h9>Visit our Instagram</h9>
+        </div>
+
+        <div class="social-item">
+            <img src="tiktok.png" alt="TikTok Logo">
+            <h9>Visit our TikTok</h9>
+        </div>
+
+        <div class="social-item">
+            <img src="email.png" alt="Gmail Logo">
+            <h9> Email us </h9>
+        </div>
+</div>
+
+<div class="contact-right">
+    <div class="address">
+    <h10> Our Address <br> 2 Atlantic Ave <br> Boston, MA 02110</h10>
+    </div>
+</div>
+
+<div class="contact-form">
+    <h11>Contact Form</h11>
+    <form id="myForm">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName"
+        name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName"
+        name="lastName" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city"
+        name="city" required>
+
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip"
+        name="zip" pattern [0-9]{5}
+        placeholder="02110" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email"
+        name="email" required>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value=""> Choose a subject</option>
+            <option value="Question">General Question</option>
+            <option value="Event">Upcoming Events</option>
+            <option value="Tea">Tea Information</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"
+        rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        </form>
+    </div>
+
+
+
+</main>
+</body>
+<footer>
+    2026 Anna's Tea Shop. Contact <a href="mailto:metaliaj.a@northeastern.edu"> Anna</a>
+</footer>
+</html>
